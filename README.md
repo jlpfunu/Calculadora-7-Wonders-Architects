@@ -1,6 +1,32 @@
 # Marcador — 7 Wonders: Architects
 
-App web para calcular la puntuación final de una partida de *7 Wonders: Architects*.
+App web con una landing explicando el juego (con el vídeo oficial de reglas
+de Repos Production) y un marcador para calcular la puntuación final de una
+partida de *7 Wonders: Architects*.
+
+## Configurar tus enlaces de afiliado
+
+Todo se edita en un único archivo: `src/affiliateConfig.js`.
+
+- **Amazon**: date de alta en [afiliados.amazon.es](https://afiliados.amazon.es)
+  (Programa de Afiliados de Amazon). Al aprobarte te darán un "tag" (ID de
+  seguimiento), tipo `tublog-21`. Sustituye `AMAZON_TAG` en el archivo por
+  el tuyo — el resto del enlace ya está preparado.
+- **Otras tiendas** (opcional): el archivo incluye espacio para añadir más
+  botones de compra, por ejemplo:
+  - [Zacatrus](https://www.zacatrus.es) — tienda española especializada en
+    juegos de mesa, con programa de afiliados propio.
+  - [Philibert](https://www.philibertnet.com) — gran tienda europea con
+    programa de afiliados.
+  - Cualquier otra tienda con la que llegues a un acuerdo — solo tienes que
+    añadir su nombre y enlace en el array `OTHER_STORES`.
+  - Mientras el campo `url` esté vacío, ese botón no se muestra en la
+    landing, así que puedes ir añadiéndolos poco a poco.
+
+⚠️ Importante: Amazon exige mostrar el aviso de afiliado en la página donde
+esté el enlace (ya incluido en la landing) y prohíbe insertar enlaces de
+afiliado en emails, PDFs o anuncios de pago — revisa las condiciones del
+programa antes de promocionarlo fuera de la web.
 
 ## Probarla en local
 
