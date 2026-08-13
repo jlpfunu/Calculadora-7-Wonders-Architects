@@ -86,7 +86,7 @@ export default function Landing({ onStart }) {
             cursor: "pointer",
           }}
         >
-          Ir al marcador <ArrowRight size={17} />
+          Ir a Calculadora <ArrowRight size={17} />
         </button>
       </section>
 
