@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import Landing from "./Landing.jsx";
 import Scoreboard from "./Scoreboard.jsx";
 
@@ -30,6 +31,7 @@ export default function App() {
           <Scoreboard onBack={() => setView("landing")} />
         )}
       </div>
+      <Analytics />
     </div>
   );
 }
